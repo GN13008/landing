@@ -1,0 +1,103 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:700');
+
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+/* My components */
+@import url(components/button.css);
+@import url(components/cards.css);
+@import url(components/footer.css);
+
+/* Utilities */
+body {
+  margin: 0;
+  font-family: Open Sans;
+}
+
+h1, h2, h3, h4 {
+  font-family: Poppins;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Custom design below! */
+
+.banner {
+  padding: 40px;
+  background-size: cover;
+  color: white;
+}
+.banner-container{
+  width: 800px;
+  margin: 0 auto;
+}
+
+.card-container {
+  text-align: center;
+}
+.cards {
+  display: flex;
+  width : 800px;
+  margin : 0 auto;
+  justify-content: center;
+  align-content: center;
+}
+
+.footer {
+  background-color: #3d405b;
+  color: white;
+  text-align: center;
+  padding: 24px;
+}
+
+.footer ul {
+  /* display: flex; */
+  padding: 0px;
+  font-size: 32px;
+}
+
+.footer li {
+  display: inline;
+}
+
+.fab {
+  color: #577399;
+  margin: 16px;
+}
+
+.fab:hover {
+  color: white;
+}
+
+.fa-heart {
+  color: white;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .banner-container, .cards {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .banner-container, .cards {
+    width: 500px;
+  }
+  .cards{
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .banner-container, .cards {
+    width: 300px;
+  }
+  .cards {
+    flex-wrap: wrap;
+  }
+}
